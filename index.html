@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Namaste React</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div id="root"></div>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- this h1 will NOT be replaced by React.render -->
+    <!-- <h1 id="priya">Top of roott</h1> -->
 
-    <script>
+
+    <div id="root">
+
+        <!-- this h1 will be replaced by React.render -->
+        <!-- <h1 id="priya">Priya is my name </h1> -->
+    </div>
+
+    <!-- no need of links as installed react and react-dom from npm
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+
+    <!-- importing js file -->
+    <script type="module" src="/App.js"></script>
+
+
+    <!--<script>
         //using React => as creating element is core for react development
         const head = React.createElement("h1", {}, "Hello World")
 
@@ -18,7 +33,7 @@
         //it will create root
         const root = ReactDOM.createRoot(document.getElementById("root"))
 
-        root.render(head)
+        root.render(head)-->
     </script>
 </body>
 </html>
