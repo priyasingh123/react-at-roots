@@ -7,34 +7,7 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <!-- this h1 will NOT be replaced by React.render -->
-    <!-- <h1 id="priya">Top of roott</h1> -->
-
-
-    <div id="root">
-
-        <!-- this h1 will be replaced by React.render -->
-        <!-- mostly it is kept as not rendered so that if there is a bug in code while rendering, the message above should be displayed -->
-        <h1 >Not rendered</h1>
-    </div>
-
-    <!-- no need of links as installed react and react-dom from npm
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
-
-    <!-- importing js file -->
+    <div id="root"></div>
     <script type="module" src="/App.js"></script>
-
-
-    <!--<script>
-        //using React => as creating element is core for react development
-        const head = React.createElement("h1", {}, "Hello World")
-
-        //using ReactDOM as that element created has to be put inside DOM
-        //it will create root
-        const root = ReactDOM.createRoot(document.getElementById("root"))
-
-        root.render(head)-->
-    </script>
 </body>
 </html>

@@ -1,7 +1,108 @@
-#head{
-    color:red;
+*{
+    margin:0;
+    padding:0;
 }
 
-#priya{
-    color: blue;
+.header{
+    display:flex;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+
+.logo{
+    border: 2px solid #000;
+    width: 80px;
+    height: 96px;
+    margin: 3px 0 0 3px;
+}
+
+.nav-items > ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size:20px;
+}
+
+.nav-items > ul > li{
+    margin:10px;
+    padding:10px;
+}
+
+
+.res-card{
+    width: 260px;
+    height:300px;
+    padding:10px;
+    box-sizing: border-box;
+    border:1px solid white;
+    border-radius:10px;
+}
+
+.res-card:hover{
+    border:1px solid rgb(214, 210, 210);
+    box-sizing: border-box;
+    box-shadow: 0 0 20px rgb(218, 214, 214);
+    cursor:pointer;
+}
+
+.res-card > img{
+    height:200px;
+    width: 100%;
+    border-radius:10px;
+}
+
+.res-container{
+    padding:20 100px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+}
+
+.user-card{
+    border: 1px solid #00f;
+    width: 266px;
+    height: 266px;
+    text-align: center;
+    transform: scaleX(-1);
+    padding: 32px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: aqua;
+    color:aqua;
+    transition: 1s;
+}
+
+.user-card:hover{
+    color:black;
+    transform: rotate3d(0,1,0, 360deg);
+}
+
+.contact-container{
+    display:flex;
+}
+
+.hidden{
+display: none;
+}
+
+.status{
+    width:20px;
+    height:20px;
+    border:solid black 1px;
+    border-radius: 50%;
+    border: none;
+}
+
+.false{
+    background-color: red;
+
+}
+
+.true{
+    background-color: green;
+
 }
