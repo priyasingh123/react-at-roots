@@ -5,15 +5,19 @@ import img2 from '../utils/img/img2.jpg';
 import img3 from '../utils/img/img3.jpg';
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus"; 
+import withPromoted from "./withPromoted";
+
 
 
 const Body = () => {
+
+    const PromotedRestaurantCard = withPromoted(RestaurantCard)
     const onlineStatus = useOnlineStatus()
 
     // const ListOfRestaurants = useState([])
-    const ListOfRestaurants = [{id: 1, name: 'KFC', items: 'Burger, Fries, shakes', image: img1},
-            {id: 2, name: 'Dominos', items: 'Pizza, Garlic Bread, cake', image: img2},
-            {id: 3, name: 'Bikanerwala', items: 'coke, ice-cream, shakes', image: img3},
+    const ListOfRestaurants = [{id: 1, name: 'KFC', items: 'Burger, Fries, shakes', image: img1, promoted: true},
+            {id: 2, name: 'Dominos', items: 'Pizza, Garlic Bread, cake', image: img2, promoted: false},
+            {id: 3, name: 'Bikanerwala', items: 'coke, ice-cream, shakes', image: img3, promoted: true},
         ]
 
     // useEffect (() => {
@@ -38,7 +42,12 @@ const Body = () => {
             </div>
             <div className='res-container'>
                 {ListOfRestaurants.map ((restaurant) => {
-                    return <Link key={restaurant.id} to={`/restaurants/${restaurant.id}`}><RestaurantCard  restaurant={restaurant}/></Link>
+                    return <Link key={restaurant.id} to={`/restaurants/${restaurant.id}`}>  
+                    {restaurant.promoted ? <PromotedRestaurantCard restaurant={restaurant}/> : <RestaurantCard restaurant={restaurant}/>}
+                     
+                    
+                    
+                    </Link>
                 })}
             </div>
 
