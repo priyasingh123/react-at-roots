@@ -9,7 +9,7 @@ class ContactUs extends React.Component{
 
     }
 
-    componentDidMount () {
+    /*componentDidMount () {
         this.interval = setInterval(() => {
             console.log ('Hello')
         }, 1000)
@@ -17,7 +17,7 @@ class ContactUs extends React.Component{
 
     componentWillUnmount() {
         clearInterval(this.interval)
-    }
+    }*/
     
     render (){
         return(

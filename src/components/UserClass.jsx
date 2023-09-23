@@ -1,4 +1,5 @@
 import React from "react"
+import LoginUser from "../context/LoginUser" 
 
 class UserClass extends React.Component {
     constructor (props) {
@@ -15,7 +16,7 @@ class UserClass extends React.Component {
         const res = await fetch('https://api.github.com/users/priyasingh123')
         const user = await res.json();
         this.setState({githubUser: user})
-        console.log (user)
+        //console.log (user)
     }
     
     render(){
@@ -25,10 +26,13 @@ class UserClass extends React.Component {
             
             <div className="user-card">
                 <h3>{name}</h3>
+                <h5>User details: 
+                    <LoginUser.Consumer>{(data) => console.log ('context inside class based components:',data)}</LoginUser.Consumer>
+                </h5>
                 <h4>Role: {role}</h4>
                 <p>{this.state.githubUser?.login}</p>
                 <h4>Contact details:</h4>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.yaya </p>
             </div>
         )
     }
