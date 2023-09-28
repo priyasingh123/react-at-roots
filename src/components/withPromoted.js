@@ -5,8 +5,6 @@ const withPromoted = (RestaurantCard) => {
                 <label>Promoted</label>
                 <RestaurantCard {...props}/>
             </>
-            
-            
         )
     }
 

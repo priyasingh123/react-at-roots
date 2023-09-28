@@ -1,8 +1,9 @@
 import React from "react"
 import LoginUser from "../context/LoginUser" 
+// import fetch from 'node-fetch'
 
 class UserClass extends React.Component {
-    constructor (props) {
+    /*constructor (props) {
         super(props)
         this.state=({
             githubUser: {}
@@ -34,6 +35,13 @@ class UserClass extends React.Component {
                 <h4>Contact details:</h4>
                 <p>Lorem ipsum dolor sit amet.yaya </p>
             </div>
+        )
+    }*/
+
+    //for temporary
+    render () {
+        return (
+            <div></div>
         )
     }
 }

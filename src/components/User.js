@@ -6,6 +6,7 @@ const User = () => {
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est itaque consectetur temporibus odit nobis et dicta corporis sed velit non. Odio, rerum maxime.</p>
             <h4>Contact details:</h4>
             <p>Lorem ipsum dolor sit amet.</p>
+            
         </div>
     )
 }

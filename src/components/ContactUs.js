@@ -23,7 +23,7 @@ class ContactUs extends React.Component{
                 <h1>Contact Us</h1>
                 <div className="contact-container">
                     <User name="Rekha Kumar" role="Employee" />
-                    <UserClass name="Tanya Singh" role="Director" />
+                    {/* <UserClass name="Tanya Singh" role="Director" /> */}
                 </div>
             </div>
         )
